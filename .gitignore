@@ -1,0 +1,12 @@
+log/
+*.log
+geckodriver
+
+*.DS_Store
+.idea
+.vscode
+
+
+__pycache__/
+*.py[cod]
+*$py.class

@@ -1,0 +1,30 @@
+name: Health Report
+
+on:
+  schedule:
+    - cron: "30 23 * * *"
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout codes"
+        uses: actions/checkout@v2
+
+      - name: "Set python"
+        uses: actions/setup-python@v1
+        with:
+          python-version: "3.x"
+
+      - name: "Install dependencies"
+        run: |
+          bash deploy.sh
+
+      - name: "GoodHealth"
+        env:
+          GHUSERNAME: ${{ secrets.USERNAME }}
+          GHPASSWORD: ${{ secrets.PASSWORD }}
+          GHSENDKEY: ${{ secrets.SENDKEY }}
+        run: python sign.py

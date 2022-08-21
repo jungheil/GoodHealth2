@@ -1,0 +1,24 @@
+env: True
+scheme: SYSU
+user: admin
+pass: admin
+force_report: False
+
+request_timeout: 30
+max_retry_times: 5
+retry_wait_s: 3
+
+sendkey:
+
+# ---
+# env: False
+# scheme: SYSU
+# user: admin
+# pass: admin
+# force_report: False
+
+# request_timeout: 30
+# max_retry_times: 5
+# retry_wait_s: 3
+
+# sendkey:
