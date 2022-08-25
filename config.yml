@@ -12,10 +12,12 @@ sendkey:
 
 # ---
 # env: False
-# scheme: SYSU
+# scheme: NEU
 # user: admin
 # pass: admin
 # force_report: False
+# vpn: False
+# location:
 
 # request_timeout: 30
 # max_retry_times: 5
