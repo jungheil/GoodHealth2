@@ -19,7 +19,7 @@
    | ---------- | -------------------------------------------------------- |
    | `USERNAME` | 您的学号                                                 |
    | `PASSWORD` | 您的一网通密码                                           |
-   | `SENDKEY`  | 使用`server酱`发送上报错误信息，见 https://sct.ftqq.com/ |
+   | `SENDKEY`  | 使用`pushplus`发送上报错误信息，见 https://www.pushplus.plus/ |
 
 3. 将在早晨8点左右自动食用。想食用时间可自行修改`.github/workflows/action.yml`文件，注意使用 UTC 时间。
 
